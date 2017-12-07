@@ -12,8 +12,16 @@
 #######################
 # Own Files To Exlude #
 #######################
-.IdeaIC*
 
+.IdeaIC*
+Dropbox
+Nextcloud
+.nvm
+node_modules
+workspace/*/.git
+VirtualBox VMs
+alex_omv
+.platformios
 
 #############################################
 # directories, probably not worth a backup  #
@@ -32,33 +40,27 @@
 #.local/libvirt
 #.vagrant
 #.vagrant.d
-#.wine
 #.twister
 #/twister
 #Applications/eclipse*
-#/Downloads
 #*Popcorntime*
 #/Scribus
 #/VirtualBox*
+/Downloads
+.wine
 
 ## Add Game Folders here:
 #/games
 #.local/share/Steam
 #.steam
 #Steam
-#.minecraft
+.minecraft
 #.PlayOnLinux
 
 
 ################################################
 # These directories may definitely be excluded #
 ################################################
-
-# NVM folder
-.nvm
-
-# Modules installed with npm
-node_modules
 
 # Contains mounted file systems:
 .gvfs
