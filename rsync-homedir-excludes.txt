@@ -13,49 +13,67 @@
 # Own Files To Exlude #
 #######################
 
-.IdeaIC*
+workspace/**/.git
 Dropbox
-Nextcloud
-.nvm
-node_modules
-workspace/*/.git
 VirtualBox VMs
 alex_omv
-.platformios
+node_modules
+lost+found
+.IdeaIC*
+.node-gyp
+.nvm
+.HipChat
+.dropbox*
+.dropbox
+.cabal
+.DbSchema
+.electron
+.electron-gyp
+.gimp-*
+.mono
+.nano
+.psensor
+.xonotic
+.gconf
+.arduino*
+.java
+.rustup
+RAID1
+
 
 #############################################
 # directories, probably not worth a backup  #
 # (uncomment the files you don't need)      #
 #############################################
 
-#.android
-#.AndroidStudio*/
-#Android/Sdk
-#.gradle
-#.gvm
-#.grails/
-#.grails_history
-#.kde/share/apps/nepomuk
-#.local/share/notbit
-#.local/libvirt
-#.vagrant
-#.vagrant.d
-#.twister
-#/twister
-#Applications/eclipse*
-#*Popcorntime*
-#/Scribus
-#/VirtualBox*
-/Downloads
+.android
+.AndroidStudio*/
+Android/Sdk
+.gradle
+.gvm
+.grails/
+.grails_history
+.kde/share/apps/nepomuk
+.local/share/notbit
+.local/libvirt
+.vagrant
+.vagrant.d
+.twister
+/twister
+Applications/eclipse*
+*Popcorntime*
+/Scribus
+VirtualBox*
+Downloads
 .wine
 
 ## Add Game Folders here:
-#/games
-#.local/share/Steam
-#.steam
-#Steam
+/games
+.local/share/Steam
+.steam
+Steam
 .minecraft
-#.PlayOnLinux
+.PlayOnLinux
 
 
 ################################################
