@@ -3,7 +3,7 @@
 # A list of files to exclude when backing up *nix home directories using rsync.
 #
 # Author: Ruben Barkow <https://github.com/rubo77/rsync-homedir-excludes>
-# Version: 2015-08-30
+# Version: 2018-05-18
 #
 # #Usage:
 #    USER=<homedir username here>
@@ -67,6 +67,33 @@ VirtualBox*
 Downloads
 .wine
 
+###############################################
+# directories, probably not worth a backup    #
+# (uncomment the files you don't need)        #
+###############################################
+
+.android
+.AndroidStudio*/
+Android/Sdk
+.gradle
+.gvm
+.grails/
+.grails_history
+.kde/share/apps/nepomuk
+.local/share/notbit
+.local/libvirt
+.vagrant
+.vagrant.d
+.wine
+.twister
+/twister
+Applications/eclipse*
+/Downloads
+*Popcorntime*
+/.aMule
+/Scribus
+/VirtualBox*
+
 ## Add Game Folders here:
 /games
 .local/share/Steam
@@ -89,7 +116,7 @@ Steam
 
 # Session-specific:
 /.dbus
-/.cache
+.cache
 /.Trash
 .Trash-1*
 .local/share/Trash
@@ -122,6 +149,7 @@ Steam
 .local/share/RecentDocuments
 .recently-used
 .recently-used.xbel
+recently-used.xbel
 .thumbnails
 .thumb
 Thumbs.db
@@ -278,6 +306,10 @@ Thumbs.db
 .gnupg/*.lock
 .gnupg/gpg-agent-info-*
 
+#Google Earth:
+.googleearth/Temp
+.googleearth/Cache
+
 #Google Chrome:
 .config/google-chrome/Default/Local Storage
 .config/google-chrome/Default/Session Storage
@@ -290,7 +322,7 @@ Thumbs.db
 .config/chromium/Default/Application Cache
 .config/chromium/Default/History Index *
 
-#Local repositories (added by errantlinguist on 2015-04-13):
+#Local repositories:
 .gradle/caches
 /.m2/repository
 
@@ -311,3 +343,20 @@ Thumbs.db
 
 # other temporary files
 nohup.out
+
+# LibreOffice cache files
+.config/libreoffice/4/cache
+
+# freshplayerplugin LSO
+.config/freshwrapper-data/Shockwave Flash/WritableRoot/#SharedObjects
+
+# ccache, remove cache but keep config
+.ccache/?
+.ccache/tmp
+
+# Atom
+.config/Atom/*Cache
+.config/Atom/IndexedDB
+
+# VirtualBox
+.config/VirtualBox/VBoxSVC.log*
